@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(59, 67, 84, 0.89);
+  font-family: 'OpenSans',sans-serif;
+}
+
+body header {
+  border: 2px solid #427a7f;
+  padding: 20px;
+  margin: 10px 10px 20px 10px;
+  position: relative;
+}
+
+body header .icono-casa {
+  font-size: 12pt;
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+}
+
+body header .icono-casa img {
+  width: 35px;
+  color: #fff;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+body header ul li {
+  list-style-type: none;
+}
+
+body header ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14pt;
+}
+
+body header ul li a:hover {
+  background: #eeededd0;
+  color: #49868c;
+}
+
+body section {
+  border: 2px solid #427a7f;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+body footer {
+  color: #fff;
+  font-size: 8pt;
+  text-align: center;
+  border: 2px solid #427a7f;
+  padding: 10px;
+  margin: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 750px) {
+  body header .icono-casa {
+    width: 40px;
+    position: absolute;
+    left: 20px;
+  }
+  body header .icono-casa img {
+    width: 40px;
+  }
+  body header ul {
+    margin-top: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body header ul a {
+    display: block;
+  }
+}
+
+body section {
+  border: 2px solid #427a7f;
+  padding: 15px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+body section .contenedor-informacion article h2 {
+  font-size: 16pt;
+  color: #49c88c;
+}
+
+body section .contenedor-informacion article p {
+  margin-top: 5px;
+  font-size: 12pt;
+  color: #eeededd0;
+}
+
+@media screen and (max-width: 750px) {
+  body section {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=informacionPersonal.css.map */

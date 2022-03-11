@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 10px;
+}
+
+body header {
+  padding: 20px;
+  margin: 10px 10px 20px 10px;
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body header .icono-casa {
+  font-size: 12pt;
+  display: inline-block;
+  text-align: center;
+}
+
+body header .icono-casa img {
+  width: 40px;
+  color: #fff;
+}
+
+body {
+  background: url("../img/FondoT2.png");
+}
+
+body article {
+  color: white;
+}
+
+body article label, body article p {
+  font-size: 16pt;
+}
+
+body article .inp {
+  border: 2px solid black;
+  font-size: 12pt;
+}
+
+body h2, body h1 {
+  color: cyan;
+  margin: 10px 0;
+}
+
+body h1 {
+  font-size: 28pt;
+}
+/*# sourceMappingURL=estilos.css.map */

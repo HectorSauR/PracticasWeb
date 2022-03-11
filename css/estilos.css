@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3b4354;
+  font-family: 'OpenSans',sans-serif;
+}
+
+body header {
+  border: 2px solid #427a7f;
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+}
+
+body header h1 {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+body .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  color: #ffffffcc;
+}
+
+body .contenedor section {
+  background: #3c6f73;
+  width: 75%;
+  padding: 0 10px 10px;
+}
+
+body .contenedor section hr {
+  color: #fff;
+}
+
+body .contenedor section .contenedor-tarea {
+  border: 2px outset #273043;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+body .contenedor section .contenedor-tarea h2 {
+  margin: 10px 0;
+}
+
+body .contenedor section .contenedor-tarea article hr {
+  margin-bottom: 10px;
+}
+
+body .contenedor section .contenedor-tarea article p {
+  width: 98%;
+  text-align: justify;
+}
+
+body .contenedor section .contenedor-tarea article p span {
+  font-style: italic;
+  color: #fff;
+}
+
+body .contenedor section .contenedor-tarea .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  background: #49868c;
+  color: #ffffffcc;
+}
+
+body .contenedor section .contenedor-tarea .btn:hover {
+  background: #ffffffcc;
+  color: #49868c;
+}
+
+body .contenedor aside {
+  width: 25%;
+  background: #49868c;
+  padding: 10px;
+  height: 45%;
+  max-height: 400px;
+  min-height: 350px;
+}
+
+body .contenedor aside hr {
+  color: #fff;
+}
+
+body .contenedor aside h2 {
+  margin: 0;
+}
+
+body .contenedor aside .contenedor-datos {
+  margin: 10px 0;
+  font-size: 11pt;
+}
+
+body .contenedor aside .contenedor-datos p {
+  margin-bottom: 5px;
+}
+
+body .contenedor aside .contenedor-imagen {
+  margin-top: 20px;
+  text-align: center;
+}
+
+body .contenedor aside .contenedor-imagen img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+}
+
+body footer {
+  color: #fff;
+  font-size: 8pt;
+  text-align: center;
+  border: 2px solid #427a7f;
+  padding: 10px;
+  margin: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 990px) {
+  body .contenedor {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  body .contenedor section {
+    width: 100%;
+    padding-top: 10px;
+  }
+  body .contenedor aside {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body .contenedor aside {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body .contenedor aside {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  body header h1 {
+    font-size: 18pt;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,130 @@
+$color-principal: rgb(59, 67, 84)
+$color-secundario: rgb(66, 122, 127)
+$color-secundario-claro: rgb(73, 134, 140)
+$color-titulos: #fff
+$color-escrito: #ffffffcc
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*
+    margin: 0
+    padding: 0
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    background: $color-principal;
+    font-family: 'OpenSans',sans-serif;
+    header
+        border: 2px solid $color-secundario;
+        padding: 10px;
+        margin: 10px 10px 20px 10px;
+        h1
+            font-weight: 700;
+            color: $color-titulos;
+            text-align: center;
+            margin: 0 0 5px;
+    .contenedor
+        display: flex;
+        justify-content: space-between;
+        width: 90%
+        margin: 0 auto
+        color: $color-escrito;
+        section
+            background: rgb(60, 111, 115);
+            width: 75%
+            //padding: 10px
+            padding: 0 10px 10px
+            hr
+                color: #fff
+            .contenedor-tarea
+                border: 2px outset rgb(39, 48, 67)
+                padding: 10px
+                overflow: hidden
+                margin-top: 10px
+                h2
+                    margin: 10px 0
+                article    
+                    hr
+                        margin-bottom: 10px
+                    p
+                        width: 98%
+                        text-align: justify
+                        span
+                            font-style: italic
+                            color: $color-titulos
+                .btn
+                    display: inline-block
+                    text-decoration: none
+                    padding: 10px
+                    margin-top: 10px
+                    background: $color-secundario-claro
+                    color: $color-escrito
+                    &:hover
+                        background: $color-escrito
+                        color: $color-secundario-claro
+        aside
+            width: 25%
+            background: $color-secundario-claro
+            padding: 10px;
+            height: 45%
+            max-height: 400px
+            min-height: 350px
+            //height: 350px;
+            //border: 3px ridge rgb(39, 48, 67)
+            hr
+                color: #fff
+            h2
+                margin: 0
+            .contenedor-datos
+                margin: 10px 0;
+                font-size: 11pt
+                p
+                    margin-bottom: 5px
+            .contenedor-imagen
+                margin-top: 20px
+                text-align: center
+                img
+                    border-radius: 10%
+                    max-width: 100%
+                    height: auto
+    footer
+        color: #fff;
+        font-size: 8pt;
+        text-align: center;
+        border: 2px solid $color-secundario;
+        padding: 10px;
+        margin: 20px 10px 10px 10px;
+        
+
+@media screen and (max-width: 990px)
+    body
+        .contenedor
+            display: block
+            width: 100%
+            overflow: hidden
+            section
+                width: 100%
+                padding-top: 10px
+            aside
+                width: 50%
+                margin: 10px auto
+
+@media screen and (max-width: 550px)
+    body
+        .contenedor
+            aside
+                width: 80%
+
+@media screen and (max-width: 460px)
+    body
+        .contenedor
+            aside
+                width: 90%
+
+@media screen and (max-width: 415px)
+    body
+        header
+            h1
+                font-size: 18pt

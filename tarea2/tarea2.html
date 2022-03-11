@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Date Date-Time Email</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="../index.html" class="icono-casa"><img src="img/home.svg" alt=""></a>
+            <h1>Input Date Date-Time y Email</h1>
+        </header>
+        <br>
+        <h2>EQUIPO 4</h2>
+        <article>
+            <h2>Date</h2>
+            <hr>
+            <p>Se utiliza para campos de entrada que deben contener una fecha.
+                Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fecha en el campo de entrada.</p>
+            <form>
+                <label for="fecha">Introduce tu fecha de nacimiento:</label>
+                <input class="inp" type="date" id="fecha" name="fecha" max="2001-12-31"><br><br>
+                <label for="fecha">Introduce la fecha de venta:</label>
+                <input class="inp" type="date" id="fecha" name="fecha" min="2022-02-28" max="2022-03-05"><br><br>
+            </form> 
+            </article>
+            <article>
+                <h2>Datetime-local</h2>
+                <hr>
+                <form>
+                    <label for="fechahora">Fecha y hora actual:</label>
+                    <input class="inp" type="datetime-local" name="fechahora" id="fechahora" readonly>
+                </form>
+            </article>
+            <article>
+                <h2>Email</h2>
+                <hr>
+                <form>
+                    <label for="email">Introduce tu Email:</label>
+                    <input class="inp" type="email" name="email" id="email"placeholder= "example@example.com" minlength="15" maxlength="50" >
+                </form>
+            </article>
+        </section>
+        <script src="js/script.js"></script>
+</body>
+</html>

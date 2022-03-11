@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(59, 67, 84, 0.89);
+  font-family: 'OpenSans',sans-serif;
+}
+
+body header {
+  border: 2px solid #427a7f;
+  padding: 20px;
+  margin: 10px 10px 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+body header .menu {
+  display: none;
+}
+
+body header .icono-casa {
+  font-size: 35pt;
+  position: absolute;
+  left: 50px;
+  text-decoration: none;
+  color: #eeededd0;
+  padding: 5px;
+  top: 5px;
+}
+
+body header .icono-casa:hover {
+  background: #eeededd0;
+  color: #49868c;
+}
+
+body header .barra-opciones {
+  display: none;
+  font-size: 35pt;
+  color: #eeededd0;
+}
+
+body header .configuracion {
+  font-size: 35pt;
+  color: #eeededd0;
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  padding: 5px;
+}
+
+body header .configuracion:hover {
+  background: #eeededd0;
+  color: #49868c;
+}
+
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header ul li {
+  list-style-type: none;
+}
+
+body header ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14pt;
+}
+
+body header ul li a:hover {
+  background: #eeededd0;
+  color: #49868c;
+}
+
+body section {
+  border: 2px solid #427a7f;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+body footer {
+  color: #fff;
+  font-size: 8pt;
+  text-align: center;
+  border: 2px solid #427a7f;
+  padding: 10px;
+  margin: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1310px) {
+  body header nav {
+    text-align: center;
+  }
+  body header .icono-casa {
+    top: 15px;
+  }
+  body header .configuracion {
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  body header nav ul {
+    width: 85%;
+  }
+  body header .icono-casa {
+    left: 5px;
+  }
+  body header .configuracion {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body header {
+    overflow: visible;
+    height: 100px;
+  }
+  body header nav {
+    display: none;
+  }
+  body header .icono-casa {
+    left: 25px;
+  }
+  body header .contenedor-menu {
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+  }
+  body header .contenedor-menu .barra-opciones {
+    display: block;
+    position: absolute;
+  }
+  body header .configuracion {
+    right: 25px;
+  }
+  body header .menu {
+    margin-top: 100px;
+    background: rgba(59, 67, 84, 0.89);
+    padding: 10px;
+    text-align: center;
+  }
+  body header .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=configuracion.css.map */

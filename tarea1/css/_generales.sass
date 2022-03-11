@@ -1,0 +1,78 @@
+$color-principal: rgba(59, 67, 84, 0.89)
+$color-secundario: rgb(66, 122, 127)
+$color-secundario-claro: rgb(73, 134, 140)
+$color-titulos: rgb(73, 200, 140)
+$color-escrito: #eeededd0
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+*
+    margin: 0
+    padding: 0
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+//Inicio heder
+body
+    background: $color-principal;
+    font-family: 'OpenSans',sans-serif;
+    header
+        border: 2px solid $color-secundario;
+        padding: 20px;
+        margin: 10px 10px 20px 10px;
+        position: relative;
+        .icono-casa
+            font-size: 12pt;
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            img
+                width: 35px;
+                color: #fff;
+        ul
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 0 auto;
+            li
+                list-style-type: none;
+                a
+                    text-decoration: none;
+                    color: #fff;
+                    display: inline-block;
+                    // background-color: #000000;
+                    padding: 5px 10px;
+                    font-size: 14pt;
+                    &:hover
+                        background: $color-escrito
+                        color: $color-secundario-claro
+    section
+        border: 2px solid $color-secundario;
+        padding: 15px
+        margin: 0 10px;
+    footer
+        color: #fff;
+        font-size: 8pt;
+        text-align: center;
+        border: 2px solid $color-secundario;
+        padding: 10px;
+        margin: 20px 10px 10px 10px;
+
+@media screen and (max-width: 750px)
+    body
+        header
+            .icono-casa
+                width: 40px
+                position: absolute
+                left: 20px
+                img
+                    width: 40px;
+
+            ul
+                margin-top: 15px
+                flex-direction: column
+                text-align: center
+                a
+                    display: block
