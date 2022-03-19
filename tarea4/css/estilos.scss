@@ -13,23 +13,51 @@ body {
 }
 
 .contenedor{
-    width: 400px;
+    width: 1000px;
     padding: 100px 0 0 0;
     margin: auto;
+    display: flex;
+}
+
+.error{
+    width: 30%;
+    display: none;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px;
+    padding-left: 35px;
+    margin-left: 10px;
+}
+
+.informacion{
+    display: none;
+    width: 800px;
+    color: #000;
+    // background: blue;
+    // height: 100px;
+    margin: 0 auto;
 }
 
 .formulario{
+    width: 70%;
     .contenedor-inputs{
+        position: relative;
         padding: 20px;
         background: #fff;
+        height: 280px;
         border-radius: 6px 6px 0px 0px;
     }
 
     input[type="text"],
-    input[type="email"]{
+    input[type="email"],
+    input[type="number"],
+    input[type="password"]{
         display: block;
-        width: 100%;
+        width: 45%;
+        float: left;
         margin-bottom: 20px;
+        margin-left: 20px;
         padding: 15px 10px;
         border: none;
         border-bottom: 2px solid #ccc;
@@ -41,50 +69,23 @@ body {
         }
     }
 
-    input[type="radio"]{
-        display: none;
-        &:checked + .label-radio{
-            background: #f9a03f;
-        }
+    input[type="reset"]{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: none;
+        padding: 5px;
     }
 
-    .sexo{
-        display:flex;
-        flex-wrap: no-wrap;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        .hombre{
-            border-radius: 3px 0 0 3px;
-        }
-        .mujer{
-            border-radius: 0 3px 3px 0;
-        }
-    }
-
-    .label-radio{
-        background: rgba(249, 160, 63, .4);
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        width: 49.5%;
-    }
-
-    .terminos{
+    .mostrarContra{
+        position: absolute;
         text-align: center;
         color: #424242;
+        bottom: 10px;
+        left: 37%;
         label{
             margin-left: 10px;
         }
-    }
-
-    .error{
-        display: none;
-        margin-top: 20px;
-        border-radius: 3px;
-        background: #ce1818;
-        color: #fff;
-        padding: 15px;
-        padding-left: 40px;
     }
 
     .btn{

@@ -13,22 +13,53 @@ body {
 }
 
 .contenedor {
-  width: 400px;
+  width: 1000px;
   padding: 100px 0 0 0;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error {
+  width: 30%;
+  display: none;
+  border-radius: 3px;
+  background: #ce1818;
+  color: #fff;
+  padding: 15px;
+  padding-left: 35px;
+  margin-left: 10px;
+}
+
+.informacion {
+  display: none;
+  width: 800px;
+  color: #000;
+  margin: 0 auto;
+}
+
+.formulario {
+  width: 70%;
 }
 
 .formulario .contenedor-inputs {
+  position: relative;
   padding: 20px;
   background: #fff;
+  height: 280px;
   border-radius: 6px 6px 0px 0px;
 }
 
 .formulario input[type="text"],
-.formulario input[type="email"] {
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario input[type="password"] {
   display: block;
-  width: 100%;
+  width: 45%;
+  float: left;
   margin-bottom: 20px;
+  margin-left: 20px;
   padding: 15px 10px;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -38,63 +69,30 @@ body {
 }
 
 .formulario input[type="text"]:focus,
-.formulario input[type="email"]:focus {
+.formulario input[type="email"]:focus,
+.formulario input[type="number"]:focus,
+.formulario input[type="password"]:focus {
   border-bottom: 2px solid #246eb9;
 }
 
-.formulario input[type="radio"] {
-  display: none;
+.formulario input[type="reset"] {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  padding: 5px;
 }
 
-.formulario input[type="radio"]:checked + .label-radio {
-  background: #f9a03f;
-}
-
-.formulario .sexo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.formulario .sexo .hombre {
-  border-radius: 3px 0 0 3px;
-}
-
-.formulario .sexo .mujer {
-  border-radius: 0 3px 3px 0;
-}
-
-.formulario .label-radio {
-  background: rgba(249, 160, 63, 0.4);
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  width: 49.5%;
-}
-
-.formulario .terminos {
+.formulario .mostrarContra {
+  position: absolute;
   text-align: center;
   color: #424242;
+  bottom: 10px;
+  left: 37%;
 }
 
-.formulario .terminos label {
+.formulario .mostrarContra label {
   margin-left: 10px;
-}
-
-.formulario .error {
-  display: none;
-  margin-top: 20px;
-  border-radius: 3px;
-  background: #ce1818;
-  color: #fff;
-  padding: 15px;
-  padding-left: 40px;
 }
 
 .formulario .btn {
